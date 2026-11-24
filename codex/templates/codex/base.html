@@ -1,0 +1,43 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Sector Tiber Codex{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'codex/css/style.css' %}">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="brand">
+            <a href="{% url 'home' %}">SECTOR TIBER</a>
+            <span>IMPERIAL ARCHIVES</span>
+        </div>
+
+        <nav class="main-navigation">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'atlas' %}">Sector Atlas</a>
+            <a href="{% url 'worlds' %}">Worlds</a>
+            <a href="{% url 'factions' %}">Factions</a>
+            <a href="{% url 'characters' %}">Characters</a>
+            <a href="{% url 'chronicles' %}">Chronicles</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>SECTOR TIBER // IMPERIAL ARCHIVES</p>
+        <p>Unauthorized access is punishable under Imperial law.</p>
+    </footer>
+
+</body>
+</html>

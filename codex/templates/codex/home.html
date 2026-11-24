@@ -1,0 +1,56 @@
+
+{% extends 'codex/base.html' %}
+
+{% block title %}Sector Tiber | Imperial Archives{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <p class="eyebrow">IMPERIAL CARTOGRAPHIC RECORDS</p>
+
+    <h1>The Tiber Sector</h1>
+
+    <p class="hero-description">
+        An archive of worlds, noble houses, military orders,
+        and the wars that shaped the sector.
+    </p>
+
+    <a href="{% url 'atlas' %}" class="primary-button">
+        Explore the Sector
+    </a>
+</section>
+
+<section class="archive-section">
+    <h2>Sector Archives</h2>
+
+    <div class="archive-grid">
+
+        <a href="{% url 'atlas' %}" class="archive-card">
+            <h3>Sector Atlas</h3>
+            <p>Explore the worlds and star systems of the Tiber Sector.</p>
+        </a>
+
+        <a href="{% url 'worlds' %}" class="archive-card">
+            <h3>Worlds</h3>
+            <p>Discover the planets and territories of the sector.</p>
+        </a>
+
+        <a href="{% url 'factions' %}" class="archive-card">
+            <h3>Factions</h3>
+            <p>Explore the powers competing for control of the sector.</p>
+        </a>
+
+        <a href="{% url 'characters' %}" class="archive-card">
+            <h3>Characters</h3>
+            <p>Meet the leaders, heroes, and villains of Tiber.</p>
+        </a>
+
+        <a href="{% url 'chronicles' %}" class="archive-card">
+            <h3>Chronicles</h3>
+            <p>Review the events that shaped the sector's history.</p>
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}

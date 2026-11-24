@@ -1,0 +1,180 @@
+
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #171a1d;
+    color: #e5dcc8;
+    font-family: Georgia, serif;
+}
+
+/* Header and navigation */
+
+.site-header {
+    padding: 25px 6%;
+    background-color: #22272b;
+    border-bottom: 1px solid #796b50;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.brand a {
+    color: #e5dcc8;
+    text-decoration: none;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.brand span {
+    color: #b6a47d;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.main-navigation a {
+    color: #d0c2a3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.main-navigation a:hover {
+    color: #ffffff;
+}
+
+/* Homepage hero */
+
+.hero {
+    padding: 100px 8%;
+    text-align: center;
+    background:
+        linear-gradient(rgba(23, 26, 29, 0.82), rgba(23, 26, 29, 0.95)),
+        radial-gradient(circle, #59616a, #171a1d);
+}
+
+.eyebrow {
+    color: #b99d67;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 76px);
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #c5bba7;
+    line-height: 1.8;
+}
+
+/* Buttons */
+
+.primary-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #8b7046;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.primary-button:hover {
+    background-color: #a68a5d;
+}
+
+/* Archive cards */
+
+.archive-section {
+    padding: 50px 8%;
+}
+
+.archive-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.archive-card {
+    padding: 25px;
+    background-color: #242a2f;
+    border: 1px solid #514b40;
+    color: #e5dcc8;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.archive-card:hover {
+    border-color: #b99d67;
+}
+
+.archive-card h3 {
+    color: #c9ae7d;
+}
+
+.archive-card p {
+    color: #bcb5a7;
+    line-height: 1.6;
+}
+
+/* Placeholder pages */
+
+.page-heading {
+    padding: 100px 8%;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.page-heading h1 {
+    font-size: 48px;
+}
+
+/* Footer */
+
+.site-footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #22272b;
+    border-top: 1px solid #796b50;
+    color: #a99d86;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .main-navigation {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+}
